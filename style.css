@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* HERO IMAGE */
+.hero {
+  background-image: url(./images/landingbg.png);
+  background-size: cover;
+  background-position: center;
+  height: 450px; 
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.logo {
+  width: 90px;
+  height: 65px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* NAV */
+nav ul {
+    
+  display: flex;
+  gap: 20px;
+  list-style: none;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  
+}
+
+/* ICONS */
+.icons {
+  display: flex;
+  gap: 20px;
+  justify-content: right;
+}
+
+/* SECTION */
+
+
+.section {
+  padding: 20px;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 28px;
+  font-style: italic;
+  color: black;
+}
+
+.marquee {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* SECTION IMAGES */
+
+.section .secImages  {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+}
+
+.section .secImages img{
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+
+ .occasions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+}
+.occasion h1{
+    display: flex;
+    justify-content: center;
+}
+
+ .OccasionDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.OccasionDetails img{
+    
+    width: 400px;
+    height: 500px;
+    gap: 20px;
+   
+}
+
+.sectionBanner {
+    
+    height: 300px;
+    width: 100%;
+}
+
+.sectionBanner img{
+    width: 100%;
+    height: 100%;
+    
+}
+.cart{
+    
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+
+}
+.cart img{
+    
+    width: 225px;
+    height: 100%;
+}
+
+.cart p{
+    width: 70px;
+    margin-left: 5px;
+}
+
+.cart h2{
+    width: 200px;
+    height: 100%;
+    margin-left: 5px;
+    
+}
+
+.buttons{
+
+    width: 205px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 2px;
+    gap: 10px;
+}
+.buttons button{
+    
+    width: 100px;
+    height: 45px;
+    
+    
+} 
+.buttons button:hover{
+    background-color: orange;
+    color: rgb(25, 24, 24);
+    cursor: pointer;
+}
+.box{
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    
+}
