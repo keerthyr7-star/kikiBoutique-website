@@ -165,38 +165,159 @@ nav ul li a {
 }
 
 
-
 /* footer */
 
 .footer{
-  /* border: 2px solid red; */
-  padding: 20px;
-  width: 100%;
-  margin-top:10px;
-  display: flex; 
-  justify-content: center;
-  background-color: black
-}
-
-.footer .lastinfo {
-  /* border: 2px solid blue; */
-  text-align: center;
-  display: flex;
-  gap: 20px;
+  background-color: #111;
   color: white;
-
+  padding: 40px 20px 20px 20px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 55px;
 }
+
+.footer-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer h3{
+  margin-bottom: 15px;
+}
+
+.footer a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer a:hover{
+  color: orange;
+}
+
+.footer-about p,
+.footer-contact p{
+  font-size: 14px;
+  opacity: 0.8;
+}
+
 .icons{
-  /* border: 2px solid green; */
   display: flex;
-  gap: 10px;
-  color: white;
-  
+  gap: 15px;
+  margin-top: 10px;
 }
 
 .icons i{
   cursor: pointer;
+  transition: 0.3s;
 }
+
+.icons i:hover{
+  color: orange;
+  transform: scale(1.2);
+}
+
+.footer-bottom{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  opacity: 0.7;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+}
+
+@media(max-width: 768px){
+  .footer-container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links, .footer-contact, .footer-about{
+    width: 100%;
+  }
+}
+
+/* form */
+
+.contactform{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.mainform{
+  width: 100%;
+  max-width: 400px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.mainform h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mainform form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mainform input,
+.mainform textarea{
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.mainform input:focus,
+.mainform textarea:focus{
+  outline: none;
+  border-color: black;
+}
+
+.mainform button{
+  padding: 12px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.mainform button:hover{
+  background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 576px){
   .header

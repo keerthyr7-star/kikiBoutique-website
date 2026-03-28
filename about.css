@@ -62,7 +62,7 @@ nav ul li a {
   font-size: 25px;
   font-style: italic;
   color: black;
-  background-color: beige;
+  /* background-color: beige; */
   display: block;
 }
 
@@ -97,79 +97,178 @@ nav ul li a {
   }
 }
 
-
-
-/* about section */
-/* .aboutcontent{
-    border: 2px solid red;
-} */
-/* .aboutcontent .contents{
-    border: 2px solid blue;
-    
-} */
-.aboutcontent .contents h1{
-    /* border: 2px solid green; */
-    padding: 10px;
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    padding-bottom: 30px;
+.topabout{
+  /* border: 2px solid red; */
+  background-color: #2f3b4c;
+  padding: 15px 0;
+  text-align: center;
+  width: 80%;
+  margin: 10px auto;
 }
 
-.aboutcontent .contents p{
-    /* border: 2px solid blueviolet; */
-    padding: 5px;
-    font-size: 15px;
-    background-color: black;
-    color: beige;
-    line-height: 1.9;
+.topabout h1{
+  /* border: 2px solid blue; */
+  color: white;
+  font-size: 25px;
 }
+
+/* aboutinfo */
+
+.aboutusinfo{
+  /* border: 2px solid red; */
+  padding: 15px 0;
+  text-align: left;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.aboutusinfo p{
+  /* border: 2px solid blue; */
+  /* padding: 10px; */
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 10px 5px;
+}
+
+
 .aboutomages{
+    width: 80%;
+    margin: 10px auto;
     margin-top: 3px;
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: center;
-    gap: 3px;
-    background-color: rgb(9, 9, 9)
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 5px;
+   
 }
 
 .aboutomages img{
     /* border: 2px solid green; */
-    width: 500px;
-    height: 100vh;
+    width: 400px;
+    height: 80vh;
+}
+/* footerextra */
+.knowledgebase{
+  border: 2px solid rgb(133, 129, 129);
+  padding: 35px 0;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(228, 245, 245);
+}
+.knowledgebase .footertittle{
+  /* border: 2px solid blue; */
+  padding: 10px 0;
 }
 
 
+.footertittle h1{
+  /* border: 2px solid green;  */
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.iconsfooterstart{
+  /* border: 5px solid brown; */
+  display: flex;
+  flex-direction: row;
+  
+}
+.iconsfooter{
+  /* border: 2px solid violet; */
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconsfooter i{
+  /* border: 2px solid blueviolet; */
+  text-align: center;
+  font-size: 25px;
+}
+
+.iconsfooter p{
+  /* border: 2px solid blue; */
+  text-align: center;
+  padding: 5px 0;
+  margin-top: 15px;
+}
 /* footer */
 
 .footer{
-  /* border: 2px solid red; */
-  padding: 20px;
-  width: 100%;
-  margin-top:10px;
-  display: flex; 
-  justify-content: center;
-  background-color: black
-}
-
-.footer .lastinfo {
-  /* border: 2px solid blue; */
-  text-align: center;
-  display: flex;
-  gap: 20px;
+  background-color: #111;
   color: white;
-
+  padding: 40px 20px 20px 20px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 55px;
 }
+
+.footer-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer h3{
+  margin-bottom: 15px;
+}
+
+.footer a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer a:hover{
+  color: orange;
+}
+
+.footer-about p,
+.footer-contact p{
+  font-size: 14px;
+  opacity: 0.8;
+}
+
 .icons{
-  /* border: 2px solid green; */
   display: flex;
-  gap: 10px;
-  color: white;
-  
+  gap: 15px;
+  margin-top: 10px;
 }
 
 .icons i{
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.icons i:hover{
+  color: orange;
+  transform: scale(1.2);
+}
+
+.footer-bottom{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  opacity: 0.7;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+}
+
+@media(max-width: 768px){
+  .footer-container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links, .footer-contact, .footer-about{
+    width: 100%;
+  }
 }
 
 @media(max-width: 576px){
