@@ -16,7 +16,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
- padding: 0 20px; 
+  padding: 0 20px; 
  
 }
 
@@ -62,7 +62,6 @@ nav ul li a {
   font-size: 25px;
   font-style: italic;
   color: black;
-  background-color: beige;
   display: block;
 }
 
@@ -113,27 +112,249 @@ nav ul li a {
 .homesection .homebanner img{
     /* border: 2px solid yellow; */
     width: 100%;
-    height: auto;
+    height: 480px;
 }
-.homebanner button{
+/* .homebanner button{
     position: absolute;
     left: 5%;
-    top: 50%;
+    top: 60%;
     width: 120px;
     height: 50px;
     border-radius: 25px;
     
-}
+} */
+
 .homebanner p{
     /* border: 2px solid green; */
     position: absolute;
     left: 5%;
     top: 40%;
-    color: white;
+    color: rgb(167, 186, 243);
     max-width: 500px;
     line-height: 1.9;
 }  
+/* justin */
+.justin{
+  /* border: 2px solid red; */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.justin h1{
+  /* border: 2px solid blue; */
+  padding: 5px;
+  font-size: 20px;
+}
 
+
+/* section 4 */
+.box{
+  /* border: 2px solid blue; */
+  background-color: beige;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box .cart{
+  /* border: 2px solid rgb(96, 95, 95); */
+  margin-top: 25px;
+  width: 214px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.cart img{
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+   transition: transform 0.5s ease;
+}
+
+
+.cart:hover img{
+  transform: scale(1.2);
+  /* box-shadow: 0 8px 20px rgba(0,0,0,0.2); */
+}
+
+.cart h2{
+  /* border: 2px solid blueviolet; */
+  font-size: 18px;
+  width: 100px;
+}
+.cart p{
+  font-size: 12px; 
+  overflow-wrap: break-word;
+  
+}
+.price{
+  /* border: 2px solid blueviolet; */
+  display: flex;
+  justify-content: space-between;
+  width: 213px;
+  align-items: center;
+}
+.price p{
+  font-weight: bold;
+}
+.price i{
+  color: grey;
+  cursor: pointer;
+  transition: 0.3;
+ 
+}
+.price i:hover{
+  color: red;
+  transform: scale(1.2);
+}
+
+.buttons button{
+  border: 2px solid black;
+  height: 40px;
+  width: 105px;
+  background-color: black;
+  color: white;
+  transition: 0.3;
+  
+}
+
+.buttons button:hover{
+  color: orange;
+  transform: translate(-2px);/*littlee lift*/
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+/* endingbanner */
+.endingbanner{
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+ }
+.endingbanner img{
+  /* border: 2px solid blue; */
+  margin-top: 10px;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  padding: 2px;
+}
+
+.endingbanner h1{
+  /* border: 2px solid green; */
+  font-size: 45px;
+  letter-spacing: 15px;
+  position: absolute;
+  color: white;
+  padding-left: 10%;
+  top: 40%;
+  text-align: center;
+}
+
+.endingbanner p{
+  /* border: 2px solid green; */
+  font-size: 20px;
+  padding-left:10%;
+  position: absolute;
+  top: 55%;
+  letter-spacing: 10px;
+  color: white;
+}
+
+.feedbacks{
+  /* border: 2px solid blue; */
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.feedbacks h1{
+  /* border: 2px solid green; */
+  padding: 5px;
+  font-size: 20px;
+}
+
+/* feeback final */
+.final{
+  margin-top: 60px;
+  /* border: 2px solid green; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.customerfeed{
+  padding: 20px;
+  border: 2px solid rgb(186, 170, 170);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 350px;
+  align-items: center;
+  height: 450px;
+}
+.customerfeed img{
+  /* border: 2px solid brown; */
+  /* margin: 0;
+  display: block; */
+  margin-top: 70px;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border-radius: 50%  
+}
+
+.customerfeed h1{
+  /* border: 2px solid red; */
+  text-align: center;
+  padding: 5px;
+  font-size: 25px;
+}
+.customerfeed p{
+  margin-top: 2px;
+  /* border: 2px solid rgb(132, 255, 0); */
+  text-align: center;
+  /* padding: 1px; */
+  font-size: 15px;
+}
+.customerfeed h4{
+  /* border: 2px solid blueviolet; */
+  margin-top: 5px;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
+.reviews{
+  /* border: 2px solid blue; */
+  padding: 5px;
+}
+
+.icons1 {
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2px;
+}
+
+.icons1 i{
+  /* border: 2px solid black; */
+  padding: 2px;
+  margin: 2px;
+}
+
+.icons1 i:hover{
+  cursor: pointer;
+  color: orange;
+}
 
 /* footer */
 
@@ -144,7 +365,8 @@ nav ul li a {
   margin-top:10px;
   display: flex; 
   justify-content: center;
-  background-color: black
+  background-color: black;
+  /* margin-bottom: 40px;  */
 }
 
 .footer .lastinfo {
@@ -153,7 +375,15 @@ nav ul li a {
   display: flex;
   gap: 20px;
   color: white;
+}
 
+.finalpara{
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+}
+.finalpara p{
+  border: 2px solid blue;
 }
 .icons{
   /* border: 2px solid green; */
